@@ -1,0 +1,19 @@
+Css --> Cascading style sheet 
+- To create more attractive web pages or website WITH COLOUR AND ANIMATIONS.
+
+
+Founder of Css?
+- Hakon wium lie ---> 1996
+
+There are three ways to define css? 
+1. external css [.css]
+2. internal css  <style>
+3. inline css  -- same line -> style
+
+
+css run ? 
+- browser / client side 
+
+Browser directly run onle ---> html 
+
+Browser can understand only html.
