@@ -1,0 +1,4 @@
+About C language :
+- Defination 
+- Advantage of c 
+- disadvantage of C
