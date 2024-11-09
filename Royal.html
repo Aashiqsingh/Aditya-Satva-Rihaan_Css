@@ -14,19 +14,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+.slider{
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
 .navbar2{
     height: 100px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.183);
+    background-color: rgba(0, 0, 0, 0.443);
     padding-left: 30px;
     padding-top: 10px;
-    position: absolute;
+    position: sticky;
+    top: -20px;
     z-index: 1;
 }
 .link{
     float: right;
-    margin-top: -60px;
-    margin-right: 30px;
+   margin-top: -55px;
+   margin-right: 20px;
+   
 }
 .link a{
     color: white;
@@ -43,6 +50,34 @@
     color: orangered;
     font-size: 30px;
 }
+.slider button{
+    /* height: 50px; */
+    position: absolute;
+    top: 100px;
+}
+.but button{
+    height: 40px;
+    width: 480px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    margin: 30px;
+    
+}
+.but{
+    
+    padding-left: 80px;
+}
+.youtube{
+    height: 430px;
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 50px;
+}
+.youtube iframe{
+    padding: 10px;
+}
+
 
     
 </style>
@@ -58,7 +93,7 @@
                 <a href="">About us</a>
                 <a href="">Our Service</a>
                 <a href="">Contact</a>
-                <a href=""><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+91 8923787639</a>
+                <a href=""><i class="fa-solid fa-phone"></i>+91 763289742</a>
             </div>
         </div>
         <!-- navbar ending -->
@@ -91,6 +126,17 @@
                 </button>
               </div>
          </div>
+         <!-- slider ending -->
+          <div class="but">
+            <button>Register Here For Free Online seminar on What after 10th/12th</button>
+            <button>Register Here For Free Online Bootcamp</button>
+          </div>
+          <!-- button ending -->
+
+          <div class="youtube">
+            <iframe width="577" height="347" src="https://www.youtube.com/embed/j1_hkYd_31o" title="Profile || Dhiraj Poojara (Gujarati) || Royal Technosoft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="577" height="347" src="https://www.youtube.com/embed/wtSwXvaQwNY" title="Dhiraj Poojara" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
     </div>
 </body>
 </html>
