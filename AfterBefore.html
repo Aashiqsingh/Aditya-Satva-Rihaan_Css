@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+
+        background-image: url('https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        /* background-color: rgba(255, 68, 0, 0.724); */
+        background-image: url('https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg');
+        opacity: 0.4;
+        background-size: cover;
+        transition: 1s;
+        bottom: 250px;
+        right: 972px;
+    }
+    .box:hover::before{
+        height: 0;
+        width: 0;
+        transition: 1s;
+    }
+</style>
+<body>
+    
+    <!-- After before  -->
+
+    <div class="box">
+
+    </div>
+
+    
+
+
+</body>
+</html>
