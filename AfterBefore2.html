@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+
+        background-image: url('https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466');
+        background-size: cover;
+
+        /* box-shadow: 10px 10px 10px blue; */
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 150px;
+        background-color: rgba(255, 68, 0, 0.692);
+        transition: 1s;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.658);
+        right: 972px;
+        transition: 1s;
+    }
+    .box:hover::before{
+        width: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0;
+        transition: 1s;
+    }
+
+</style>
+<body>
+    
+    <!--  base layer : before layer : after layer -->
+
+
+    <div class="box"></div>
+
+</body>
+</html>
