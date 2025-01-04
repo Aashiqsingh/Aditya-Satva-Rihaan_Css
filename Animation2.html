@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: teal;
+
+        animation-name: aditya;
+        animation-duration: 4s;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes aditya{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            left: 400px;
+            top: 0;
+            background-color: red;
+        }
+        50%{
+            top: 400px;
+            left: 400px;
+            background-color: green;
+        }
+        75%{
+            left: 0;
+            top: 400px;
+            background-color: blue;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
+</style>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
