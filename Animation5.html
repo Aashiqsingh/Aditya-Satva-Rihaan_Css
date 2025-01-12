@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+
+        animation-name: bird;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+
+        animation-direction: reverse;
+        animation-direction: alternate;
+        animation-direction: alternate-reverse;
+
+        animation-delay: 2s;
+    }
+    @keyframes bird{
+        0%{
+            bottom: 0;
+            left: 0;
+        }
+        25%{
+            left: 320px;
+            bottom: 150px;
+        }
+        50%{
+            left: 640px;
+            bottom: 300px;
+        }
+        75%{
+            left: 960px;
+            bottom: 450px;
+        }
+        100%{
+            left: 1200px;
+            bottom: 600px;
+        }
+    }
+</style>
+<body>
+    
+
+    <img src="https://media.tenor.com/dlMu85vsho4AAAAM/alfa7.gif" height="200" width="200" alt="">
+
+</body>
+</html>

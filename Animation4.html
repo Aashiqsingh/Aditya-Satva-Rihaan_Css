@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 400px;
+        width: 400px;
+        border: 10px solid rgba(0, 0, 0, 0.404);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border-top: 10px solid red;
+
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       
+    }
+    .box2{
+        height: 300px;
+        width: 300px;
+        border: 10px solid rgba(0, 0, 0, 0.404);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 10px solid red;
+
+        animation-name: ani2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+    }
+    .box3{
+        height: 200px;
+        width: 200px;
+        border: 10px solid rgba(0, 0, 0, 0.404);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        border-top: 10px solid red;
+        align-items: center;
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       
+    }
+    .box4{
+        height: 100px;
+        width: 100px;
+        border: 10px solid rgba(0, 0, 0, 0.404);
+        border-radius: 50%;
+        border-top: 10px solid red;
+
+        animation-name: ani2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes ani1{
+        from{
+            transform: rotate(0);
+            
+        }
+        to{
+            transform: rotate(360deg);
+            
+        }
+    }
+    @keyframes ani2{
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+            
+        }
+    }
+</style>
+<body>
+    
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <div class="box4"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

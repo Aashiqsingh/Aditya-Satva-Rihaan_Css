@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        position: relative;
+    }
+    .box1{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .box1:hover{
+        height: 200px;
+        width: 200px;
+        border-radius: 0;
+        z-index: 1;
+    }
+    .box2{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .box2:hover{
+        height: 200px;
+        width: 200px;
+        border-radius: 0;
+        z-index: 1;
+    }
+    .box3{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .box3:hover{
+        height: 200px;
+        width: 200px;
+        border-radius: 0;
+        z-index: 1;
+    }
+    .box4{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .box4:hover{
+        height: 200px;
+        width: 200px;
+        border-radius: 0;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
