@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url('https://watermark.lovepik.com/photo/40075/5766.jpg_wh1200.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .navbar2{
+        height: 100px;
+        width: 100%;
+        background-color: white;
+        padding: 15px;
+        padding-left: 50px;
+        box-shadow: 0px 1.5px 5px black; 
+        z-index: 5;
+        position: relative;
+    }
+    .navbar2 a{
+        padding: 10px;
+        color: red;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+    .logo{
+        float: right;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+    .logo i{
+        padding: 10px;
+        color: red;
+    }
+    .images{
+        z-index: -1;
+    
+    }
+    .images img{
+        height: 400px;
+        width: 421px;
+    }
+    .buttons{
+        margin-top: -60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons button{
+        height: 40px;
+        width: 200px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 100px;
+    }
+    .history{
+        height: 450px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.395);
+    }
+    .history img{
+        height: 198px;
+        width: 400px;
+        position: relative;
+        left: 400px;
+        top: 90px;
+    }
+    .history button{
+        height: 40px;
+        width: 200px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        position: relative;
+        top: 250px;
+        left: 90px;
+    }
+    .icon{
+        height: 200px;
+        width: 100%;
+        background-color: white;
+    }
+    #cafe{
+        height: 100px;
+    }
+    #cafe::before{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 0;
+        transition: 1s;
+        right: 630px;
+    }
+    #cafe::after{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 0;
+        left: 630px;
+        transition: 1s;
+       
+    }
+    #cafe:hover::before{
+        border-bottom: 2px solid black;
+        width: 90px;
+        transition: 1s;
+    }
+    #cafe:hover::after{
+        border-bottom: 2px solid black;
+        width: 90px;
+        transition: 1s;
+    }
+    
+    
+</style>
+<body>
+    <div class="main">
+        <div class="slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://www.cafecoffeeday.com/sites/default/files/R-SB23-Website%20Banner-1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.cafecoffeeday.com/sites/default/files/SB23-Website%20Banner-2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.cafecoffeeday.com/sites/default/files/Heritage-Banner-1920X760.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.cafecoffeeday.com/sites/default/files/Safety-CCD-Web%20Banner-Desktop.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.cafecoffeeday.com/sites/default/files/1920x760%20%281%29.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>  
+        
+        <!-- slider ending -->
+         <div class="navbar2">
+            <img src="https://www.cafecoffeeday.com/sites/all/themes/ccd/assets/images/common/logo.png" alt="">
+
+            <a href="">Cafe Menu</a>
+            <a href="">E-Shop <i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="">Order Online</a>
+            <a href="" id="cafe">Cafe Finder/Cafe Locator</a>
+            <a href="">Mobile App/CCD Mobile App</a>
+
+            <div class="logo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+         </div>
+         <!-- navbar ending -->
+
+         <div class="images">
+            <img src="https://www.cafecoffeeday.com/sites/default/files/What%2527sNew-Open-copy_0.gif" alt=""><img src="https://www.cafecoffeeday.com/sites/default/files/map-locator.gif" alt=""><img src="https://www.cafecoffeeday.com/sites/default/files/Shop%20now%20gif%20new.gif" alt="">
+
+            <div class="buttons">
+                <button>WHAT'S NEW</button>
+                <button>FIND A CAFE NEAR YOU</button>
+                <button>SHOP NOW</button>
+            </div>
+         </div>
+
+         <!-- images ending -->
+
+         <div class="history">
+            <img src="https://www.cafecoffeeday.com/sites/default/files/history-text_0_0.png" alt="">
+            <button>READ OUR STORY</button>
+         </div>
+         <!-- history ending -->
+
+         <div class="icon">
+
+         </div>
+    </div>
+</body>
+</html>
