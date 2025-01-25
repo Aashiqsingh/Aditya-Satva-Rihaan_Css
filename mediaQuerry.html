@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: red;
+    }
+    .main{
+        display: flex;
+        height: 500px;
+        width: 100%;
+        background-color: teal;
+ 
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image{
+        width: 30%;
+        height: 400px;
+
+    }
+    .image img{
+        height: 400px;
+        width: 100%;
+    }
+    .para{
+        width: 65%;
+        text-align: justify;
+        font-size: 26px;
+        color: white;
+    }
+
+    @media(max-width: 500px){
+        .main{
+            background-color: red;
+            display: block;
+            height: auto;
+            padding: 10px;
+        }
+        h1{
+            color: green;
+            font-family: cursive;
+        }
+        .image{
+            width: 100%;
+        }
+        .image img{
+            border-radius: 50%;
+        }
+        .para{
+            width: 100%;
+        }
+    } 
+
+    @media(min-width: 501px) and (max-width: 900px)
+    {
+        .main{
+            background-color: goldenrod;
+            height: auto;
+        }
+        .image{
+            width: 45%;
+        }
+        .image img{
+            border-radius: 40px;
+        }
+        .para{
+            width: 50%;
+        }
+    }
+
+    @media(min-width: 900px){
+        .main{
+            background-color: pink;
+            border-radius: 10px;
+            height: auto;
+        }
+        .image img{
+            border-radius: 20px;
+            border: 5px dotted darkblue;
+            height: auto;
+        }
+        .image{
+            height: auto;
+        }
+        .para{
+            color: darkblue;
+        }
+        
+    }
+</style>
+<body>
+    
+    <!-- mediaQuerry : website responsive  -->
+
+    <h1>Royal Technosoft</h1>
+
+    <div class="main">
+        <div class="image">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQGOLTy4barHow/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1680657582221?e=2147483647&v=beta&t=PYrtj32OM9ohdVNtvMLdZr0C4WfHr1YZrYcxEU06RlA" alt="">
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quidem, eos ad atque, harum maxime cumque et hic consectetur beatae sed deleniti provident culpa vitae aliquam! Fugit pariatur tempore voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aspernatur delectus in quod eius modi eum nobis laudantium quos adipisci veniam, explicabo blanditiis aliquam autem et excepturi id veritatis error aliquid quibusdam sint beatae. Obcaecati autem voluptas, quis illo facilis, amet in deserunt neque rerum quia tempore? Voluptatem nam, omnis laudantium architecto rem corrupti fuga error aliquid ipsa expedita illo ut sunt, voluptate neque modi delectus placeat perspiciatis eveniet quam eos obcaecati sed ab mollitia. Quas quam aliquam, illum minima ducimus eius ratione praesentium consequatur doloremque assumenda quibusdam non modi voluptatum commodi magni, laudantium quisquam fugit error quod, dolorum at.
+        </div>
+    </div>
+
+
+</body>
+</html>
